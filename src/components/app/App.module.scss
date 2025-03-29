@@ -1,0 +1,38 @@
+@use '../../styles/functions' as func;
+
+.wrapper {
+	position: relative;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.block__result {
+	display: flex;
+	flex-direction: column;
+	gap: func.adapt(15px, 1920px);
+}
+
+.opacity {
+	background-color: rgba($color: #000000, $alpha: 0.3);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 4;
+}
+
+.search {
+	> input {
+		border: 1px solid black;
+	}
+}
+
+.pagination {
+	display: flex;
+	align-items: center;
+	gap: func.adapt(20px, 1920px);
+}
